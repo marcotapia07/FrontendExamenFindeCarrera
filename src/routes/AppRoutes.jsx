@@ -7,7 +7,7 @@ import Register from "../pages/Register";
 import Dashboard from "../pages/Dashboard";
 import Materias from "../pages/Materias";
 import Estudiantes from "../pages/Estudiantes";
-import Matriculas from "../pages/Matriculas"; // <-- nueva página
+import Matriculas from "../pages/Matriculas"; 
 
 const ProtectedRoute = ({ children }) => {
   const { user } = useContext(AuthContext);
@@ -23,7 +23,7 @@ const AppRoutes = () => (
       <Route path="/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
       <Route path="/materias" element={<ProtectedRoute><Materias /></ProtectedRoute>} />
       <Route path="/estudiantes" element={<ProtectedRoute><Estudiantes /></ProtectedRoute>} />
-      <Route path="/matriculas" element={<ProtectedRoute><Matriculas /></ProtectedRoute>} /> {/* <-- ruta agregada */}
+      <Route path="/matriculas" element={<ProtectedRoute><Matriculas /></ProtectedRoute>} /> 
     </Routes>
   </Router>
 );

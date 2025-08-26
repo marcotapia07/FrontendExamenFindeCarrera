@@ -31,7 +31,6 @@ const getAuthHeaders = () => {
   return {};
 };
 
-// CRUD Materias
 export const getMaterias = async () => axios.get(`${API_URL}/materias`, getAuthHeaders());
 export const createMateria = async (materia) =>
   axios.post(`${API_URL}/materias`, materia, getAuthHeaders());
@@ -40,7 +39,7 @@ export const updateMateria = async (id, materia) =>
 export const deleteMateria = async (id) =>
   axios.delete(`${API_URL}/materias/${id}`, getAuthHeaders());
 
-// Estudiantes
+
 export const getEstudiantes = async () => axios.get(`${API_URL}/estudiantes`, getAuthHeaders());
 export const createEstudiante = async (estudiante) =>
   axios.post(`${API_URL}/estudiantes`, estudiante, getAuthHeaders());
@@ -49,7 +48,7 @@ export const updateEstudiante = async (id, estudiante) =>
 export const deleteEstudiante = async (id) =>
   axios.delete(`${API_URL}/estudiantes/${id}`, getAuthHeaders());
 
-// CRUD Matriculas
+
 export const getMatriculas = async () => axios.get(`${API_URL}/matriculas`, getAuthHeaders());
 //export const getMatriculas = async () => axios.get(`${API_URL}/api/matriculas`, getAuthHeaders());
 

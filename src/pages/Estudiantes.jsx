@@ -35,14 +35,12 @@ const Estudiantes = () => {
   const handleChange = (e) => {
     const { name, value } = e.target;
 
-    // Cédula: solo dígitos y máximo 10
     if (name === "cedula") {
       const soloDigitos = value.replace(/\D/g, "").slice(0, 10);
       setFormData((prev) => ({ ...prev, cedula: soloDigitos }));
       return;
     }
 
-    // Teléfono: solo dígitos (puedes ajustar el límite si lo necesitas)
     if (name === "telefono") {
       const soloDigitos = value.replace(/\D/g, "");
       setFormData((prev) => ({ ...prev, telefono: soloDigitos }));
@@ -157,7 +155,7 @@ const Estudiantes = () => {
 
           <label>Correo</label>
           <input
-            type="email"           // fuerza que tenga @ y formato de email
+            type="email"           
             name="email"
             placeholder="correo@dominio.com"
             value={formData.email}

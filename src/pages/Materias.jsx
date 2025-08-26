@@ -132,7 +132,7 @@ const Materias = () => {
             placeholder="Máximo 50 caracteres"
             value={formData.descripcion}
             onChange={handleChange}
-            maxLength={50} // Bloqueo adicional en el input
+            maxLength={50} 
           />
           
 

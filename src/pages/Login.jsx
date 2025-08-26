@@ -12,8 +12,8 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const userData = await loginUser(email, clave); // userData tiene { user, token }
-      login(userData); // Guardamos user + token en el contexto y localStorage
+      const userData = await loginUser(email, clave); 
+      login(userData); 
       navigate("/dashboard");
     } catch (err) {
       alert("Usuario o contraseña incorrectos.");
