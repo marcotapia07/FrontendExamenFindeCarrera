@@ -62,12 +62,13 @@ frontend/
 │  ├─ services/         # Funciones para comunicarse con el backend (API)
 │  ├─ context/          # AuthContext para manejo de sesión
 │  ├─ components/       # Componentes reutilizables
-│  ├─ AppRoutes.jsx     # Configuración de rutas
-│  └─ index.jsx         # Punto de entrada
-│
+│  ├─ routes/           # Configuración de rutas
+│  └─ main.jsx          # Punto de entrada
+│  └─ App.jsx
+│  └─ styles.css        # Diseño de la pagina             
 ├─ public/
-│  └─ index.html
-│
+│  
+└─ index.html
 └─ package.json
 ```
 
